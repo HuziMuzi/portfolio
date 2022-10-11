@@ -1,0 +1,26 @@
+.skillBlock{
+    width: 250px;
+    /*background-color: #5e4f4f;*/
+    background-color: #515167;
+
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    background-color: #b9b9b9;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.titleP{
+
+}
+.description{
+
+}

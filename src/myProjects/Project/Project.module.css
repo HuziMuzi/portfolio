@@ -1,0 +1,49 @@
+.projectBlock{
+    width: 277px;
+    background-color: #7a7979;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.imgBlock{
+    /*background-color: #fff;*/
+    background-color: #515167;
+
+    width: 277px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img{
+    margin-bottom: 50px;
+}
+
+.btn{
+    background-color: #cecece;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #888888;
+}
+.textBlock{
+
+}
+
+.title{
+    display: block;
+    background-color: #3b3b49;
+}
+
+.description{
+    background-color: #515167;
+}

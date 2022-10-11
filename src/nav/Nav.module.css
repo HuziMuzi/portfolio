@@ -1,0 +1,23 @@
+a {
+   text-decoration: none;
+}
+
+.nav {
+    /*border: 1px solid darkred;*/
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.link{
+    /*background-color: #515167;*/
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.link:hover{
+    color: #c0c0c0;
+    text-decoration: underline;
+}
