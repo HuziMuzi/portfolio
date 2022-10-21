@@ -1,0 +1,104 @@
+.skillsBlock {
+
+    background-color: var(--color-main);
+    /*background-color: #3b3b49;*/
+    padding-bottom: 30px;
+}
+
+.skillsContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.title {
+    position: relative;
+}
+
+.title h2 {
+    margin: 0 0 37px 0;
+
+    display: inline-block;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -.25px;
+    line-height: 100%;
+}
+
+.animatedBar{
+    /*margin-top: 2rem;*/
+/*overflow: hidden;*/
+    position: relative;
+    height: .5rem;
+    background: var(--color-custom);
+    /*background-color: var(--color-custom);*/
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    margin: 0 auto 0 auto;
+    position: relative;
+    right: 0;
+    width: 75px;
+}
+.animatedBar:before{
+    content: '';
+    position: absolute;
+    left: -15%;
+    width: 15px;
+    height: 100%;
+    background: var(--color-custom);
+    animation: progress 7s linear infinite;
+    border: 1px solid black ;
+
+}
+
+.animatedBar:after{
+    /*-webkit-animation-duration: 3s;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+    /*-webkit-animation-name: barAnimation;*/
+    /*-webkit-animation-timing-function: linear;*/
+    /*animation-duration: 3s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-name: barAnimation;*/
+    /*animation-timing-function: linear;*/
+    /*background-color: #101010;*/
+    /*content: '';*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 4px;*/
+}
+
+
+@keyframes progress{
+    0%{
+        left: -20%;
+        background: black;
+    }
+    100%{
+        left: 110%;
+        background: black;
+    }
+    /*51%{*/
+    /*    background: black;*/
+    /*}*/
+    /*100%{*/
+    /*    background: black;*/
+    /*}*/
+}
+
+
+
+
+
+
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
