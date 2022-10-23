@@ -7,6 +7,15 @@
     font-weight: normal;
 }
 
+::selection {
+    color: white;
+    background: var(--color-custom); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: white;
+    background: var(--color-custom); /* Gecko Browsers */
+}
+
 a {
     letter-spacing: normal;
     margin: 0;
