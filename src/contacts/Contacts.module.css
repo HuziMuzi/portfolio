@@ -1,6 +1,6 @@
-.contactsBlock{
+.contacts{
     /*min-height: 100vh;*/
-    background-color: #3b3b49;
+    background-color: var(--color-main);
     padding-bottom: 30px;
 }
 
@@ -8,6 +8,19 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+}
+
+a {
+color: #9f9f9f;
+}
+
+.contactsBlock {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin: 30px 0px;
+}
+.contactInfo{
+    margin-right: 20px;
 }
 
 .title{
@@ -26,23 +39,61 @@
 }
 
 input{
+    color: #777;
     height: 40px;
     margin-bottom: 20px;
-    background-color: #cecece;
+    background-color: var(--color-block);
 }
 
 textarea{
+    color: #777;
     height: 100px;
     resize: none;
-    background-color: #cecece;
+    background-color: var(--color-block);
 }
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #009e66;
+}input:focus {
+     border-bottom: 1px solid #009e66;
+ }
 
 .btn{
-    border: none;
-    background-color: #cecece;
-    padding: 10px;
-    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-size: 14px;
+    /*border: none;*/
+    /*background-color: #cecece;*/
+    /*padding: 10px;*/
+    background-color: #009e66;
+    border: 1px solid #009e66;
 }
 .btn:hover {
-    background-color: #888888;
+    background-color: #008052;
+}
+
+.mediaBody{
+    display: flex;
+     align-items: center;
+}
+
+.infoIcon {
+    padding-right: 30px;
+
+}
+.infoDetails{
+}
+
+.iLocal{
+    color: #009e66;
+
+}
+.infoName{
+    font-size: 15px;
+}
+.infoValue{
+    color: #9f9f9f;
+    font-size: 14px;
 }

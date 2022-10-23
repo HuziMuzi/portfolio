@@ -10,8 +10,8 @@ const Footer = () => {
                 <div className={style.socialMedia}>
                     <span className={style.socialMediaBlock}> <a href='#'>telegram</a></span>
                     <span className={style.socialMediaBlock}> <a href='#'>LinkedIn</a></span>
-                    <span className={style.socialMediaBlock}> <a href='#'>inst</a></span>
-                    <span className={style.socialMediaBlock}> <a href='#'>Twitter</a></span>
+                    <span className={style.socialMediaBlock}> <a href='#'>codevars</a></span>
+                    <span className={style.socialMediaBlock}> <a href='#'>gitHub</a></span>
                 </div>
                 <div className={style.politicks}> 2022 Все права защищены</div>
             </div>
