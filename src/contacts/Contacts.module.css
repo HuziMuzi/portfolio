@@ -58,21 +58,21 @@ textarea:focus {
      border-bottom: 1px solid #009e66;
  }
 
-.btn{
-    cursor: pointer;
-    color: #fff;
-    padding: 10px 26px;
-    border-radius: 30px;
-    font-size: 14px;
-    /*border: none;*/
-    /*background-color: #cecece;*/
-    /*padding: 10px;*/
-    background-color: #009e66;
-    border: 1px solid #009e66;
-}
-.btn:hover {
-    background-color: #008052;
-}
+/*.btn{*/
+/*    cursor: pointer;*/
+/*    color: #fff;*/
+/*    padding: 10px 26px;*/
+/*    border-radius: 30px;*/
+/*    font-size: 14px;*/
+/*    !*border: none;*!*/
+/*    !*background-color: #cecece;*!*/
+/*    !*padding: 10px;*!*/
+/*    background-color: #009e66;*/
+/*    border: 1px solid #009e66;*/
+/*}*/
+/*.btn:hover {*/
+/*    background-color: #008052;*/
+/*}*/
 
 .mediaBody{
     display: flex;

@@ -1,0 +1,58 @@
+.projectBlock {
+  width: 340px;
+  background-color: var(--color-block);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  border-bottom: 1px solid var(--color-block);
+
+  &:hover {
+    border-bottom: 1px solid #009e66;
+  }
+
+  .imgBlock {
+    width: 340px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: .7;
+      background-color: black;
+    }
+  }
+
+  .textBlock {
+    padding: 10px 0;
+  }
+
+  .title {
+    line-height: 30px;
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-weight: 400;
+    color: #9f9f9f;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
+
+

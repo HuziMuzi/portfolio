@@ -16,6 +16,9 @@ const MyProjects = () => {
     const todoListsImg = {
         backgroundImage: `url(${todo})`
     }
+    const calculatorImg = {
+        backgroundImage: `url(${todo})`
+    }
 
 
     return (
@@ -24,20 +27,20 @@ const MyProjects = () => {
                 <Title text='My Projects'/>
                 <div className={style.projects}>
                     <Project
-                        description={'Descriptions my project it"s very good'}
+                        description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
                         title={'Todo list'}
                         styles={todoListsImg}
                     />
                     <Project
-                        description={'Descriptions my project it"s very good'}
+                        description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
                         title={'Sotial media'}
                         styles={socialMediaImg}
                     />
-                    {/*<Project*/}
-                    {/*    img={'картинка'}*/}
-                    {/*    description={'Descriptions my project it"s very good'}*/}
-                    {/*    title={'Название проекта'}*/}
-                    {/*/>*/}
+                    <Project
+                        description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
+                        title={'Calculator'}
+                        styles={calculatorImg}
+                    />
                     {/*<Project img={'картинка'}*/}
                     {/*         description={'Descriptions my project it"s very good'}*/}
                     {/*         title={'Название проекта'}*/}

@@ -7,6 +7,7 @@ import {AiOutlinePhone} from "@react-icons/all-files/ai/AiOutlinePhone";
 import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
 import {TbAd} from "react-icons/all";
 import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
+import Button from "../common/components/button/Button";
 
 const Contacts = () => {
     return (
@@ -76,7 +77,7 @@ const Contacts = () => {
                         <textarea name="" id=""></textarea>
                     </form>
                 </div>
-                <button className={style.btn}>Send Message</button>
+                <Button >Send Message</Button>
             </div>
         </div>
     );
