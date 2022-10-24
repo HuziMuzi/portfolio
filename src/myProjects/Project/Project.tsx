@@ -3,15 +3,16 @@ import style from './Project.module.css'
 
 type projectPropsType = {
     title: string
-    img : string
     description: string
+    styles?: {
+        backgroundImage:string
+    }
 }
 
-const Project:FC<projectPropsType> = ({title,img,description}) => {
+const Project:FC<projectPropsType> = ({title,description,styles}) => {
     return (
         <div className={style.projectBlock}>
-            <div className={style.imgBlock}>
-                <div className={style.img}>{img}</div>
+            <div style={styles} className={style.imgBlock}>
                 <button className={style.btn}>Смотреть</button>
             </div>
             <div className={style.textBlock}>
