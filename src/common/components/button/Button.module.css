@@ -6,8 +6,8 @@
     padding: 10px 26px;
     border-radius: 30px;
     font-size: 14px;
-    background-color: #009e66;
-    border: 1px solid #009e66;
+    background-color: var(--color-custom);
+    border: 1px solid var(--color-custom);
 }
 .btn:hover {
     background-color: #008052;

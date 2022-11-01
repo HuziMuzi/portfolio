@@ -7,11 +7,9 @@
   text-align: center;
   margin: 0 20px 20px 20px;
   border-bottom: 1px solid var(--color-block);
-
   &:hover {
     border-bottom: 1px solid #009e66;
   }
-
   .imgBlock {
     width: 340px;
     min-height: 300px;
@@ -22,7 +20,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-
     &:before {
       position: absolute;
       content: '';
@@ -34,11 +31,9 @@
       background-color: black;
     }
   }
-
   .textBlock {
     padding: 10px 0;
   }
-
   .title {
     line-height: 30px;
     font-weight: 600;
@@ -46,7 +41,6 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-
   .description {
     font-weight: 400;
     color: #9f9f9f;
