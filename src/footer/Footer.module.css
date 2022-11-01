@@ -6,15 +6,16 @@
     flex-direction: column;
 }
 
-.name {
-    color: #7a7979;
-    margin: 30px 0  80px 0;
-}
+/*.name {*/
+/*    color: #7a7979;*/
+/*    margin: 30px 0  80px 0;*/
+/*}*/
 
 .socialMedia {
     display: flex;
 justify-content: center;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    /*margin-bottom: 10px;*/
     flex-wrap: wrap;
 
 
@@ -27,22 +28,24 @@ justify-content: center;
 }
 
 .politicks {
-    color: #4e4e60;
+    color: #2a2a2a;
 }
 
 .socialMediaBlock {
     text-align: center;
-    margin: 10px;
+    margin: 0px 15px;
     padding-top: 17px;
     border-radius: 10px;
+    transition: all ease-in-out .3s;
 }
 
 .socialMediaBlock a {
     cursor: pointer;
     color: #3b3b49;
     padding: 10px;
+
 }
 
 .socialMediaBlock:hover {
-    background-color: #888888;
+    transform: translateY(-5px);
 }

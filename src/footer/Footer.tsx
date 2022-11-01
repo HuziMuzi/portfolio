@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.container}`}>
-                <h3 className={style.name}>Davidovich Andrei</h3>
+                {/*<h3 className={style.name}>Davidovich Andrei</h3>*/}
                 <div className={style.socialMedia}>
                     <span className={style.socialMediaBlock}> <a href='https://t.me/Huzi_Muzi'>
                         <FaTelegramPlane size='3em' className={style.icon}/>
