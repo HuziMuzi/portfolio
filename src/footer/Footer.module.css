@@ -16,6 +16,13 @@
 justify-content: center;
     margin-bottom: 80px;
     flex-wrap: wrap;
+
+
+}
+
+.icon{
+    /*background-color: var(--color-custom);*/
+    color:var(--color-custom) ;
 }
 
 .politicks {
@@ -25,9 +32,9 @@ justify-content: center;
 .socialMediaBlock {
     text-align: center;
     margin: 10px;
-    width: 110px;
-    height: 60px;
-    background-color: #cecece;
+    /*width: 110px;*/
+    /*height: 60px;*/
+    /*background-color: #cecece;*/
     padding-top: 17px;
     border-radius: 10px;
 
