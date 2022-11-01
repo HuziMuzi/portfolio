@@ -14,15 +14,20 @@ const Footer = () => {
                 <div className={style.socialMedia}>
                     <span className={style.socialMediaBlock}> <a href='https://t.me/Huzi_Muzi'>
                         <FaTelegramPlane size='3em' className={style.icon}/>
+                        <p>telegram</p>
                         </a></span>
                     <span className={style.socialMediaBlock}> <a href='https://www.linkedin.com/in/andrei-davidovich-3212b8233/'>
                         <AiFillLinkedin size='3em' className={style.icon}/>
+                        <p>linkedin</p>
                     </a></span>
                     <span className={style.socialMediaBlock}> <a href='https://www.codewars.com/users/forgys17860'>
                          <SiCodewars size='3em' className={style.icon}/>
+                        <p>codewars</p>
+
                     </a></span>
                     <span className={style.socialMediaBlock}> <a href='https://github.com/HuziMuzi'>
                         <AiFillGithub size='3em' className={style.icon}/>
+                        <p>github</p>
                     </a></span>
                 </div>
                 <div className={style.politicks}> 2022 Все права защищены</div>
