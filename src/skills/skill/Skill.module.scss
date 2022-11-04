@@ -11,13 +11,26 @@
     padding: 10px 15px;
 }
 
-.icon{
+
+
+.iconBlock {
+    transform: rotate(45deg);
     width: 60px;
     height: 60px;
-    background-color: #b9b9b9;
-    margin-bottom: 10px;
+    background-color: var(--color-block);
+    margin-bottom: 20px;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon{
+
+    }
 }
+
+
+
+
 
 .title{
     /*color: white;*/
