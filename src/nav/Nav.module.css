@@ -15,11 +15,12 @@ a {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
+    /*letter-spacing: 1.1px;*/
     /*line-height: .3px;*/
 
 }
 
 .link:hover{
-    color: #c0c0c0;
-    text-decoration: underline;
+    color: var(--color-custom);
+    /*text-decoration: underline;*/
 }

@@ -3,6 +3,10 @@ import style from './Main.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import avatar from '../assets/image/ava.jpeg'
 import Button from "../common/components/button/Button";
+import {FaTelegramPlane} from "@react-icons/all-files/fa/FaTelegramPlane";
+import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
+import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
+import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
 
 export const Main = () => {
     return (
@@ -18,10 +22,33 @@ export const Main = () => {
                     <p className={style.aboutMe}>Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis,
                         risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi.
                         Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
-                        <Button>Download CV</Button>
+                        <Button className={style.btnCV}>Download CV</Button>
+                        <Button>About Me</Button>
                 </div>
 
             </div>
+
+            <div className={style.socialMedia}>
+                    <span className={style.socialMediaBlock}> <a href='https://t.me/Huzi_Muzi'>
+                        <FaTelegramPlane size='2em' className={style.icon}/>
+                        {/*<p>telegram</p>*/}
+                        </a></span>
+                <span className={style.socialMediaBlock}> <a href='https://www.linkedin.com/in/andrei-davidovich-3212b8233/'>
+                        <AiFillLinkedin size='2em' className={style.icon}/>
+                        {/*<p>linkedin</p>*/}
+                    </a></span>
+                <span className={style.socialMediaBlock}> <a href='https://www.codewars.com/users/forgys17860'>
+                         <SiCodewars size='2em' className={style.icon}/>
+                        {/*<p>codewars</p>*/}
+
+                    </a></span>
+                <span className={style.socialMediaBlock}> <a href='https://github.com/HuziMuzi'>
+                        <AiFillGithub size='2em' className={style.icon}/>
+                        {/*<p>github</p>*/}
+                    </a></span>
+            </div>
+
+
         </div>
     );
 };
