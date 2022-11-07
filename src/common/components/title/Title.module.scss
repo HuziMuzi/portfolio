@@ -47,9 +47,9 @@
     width: 5px;
     height: 100%;
     background: red;
-    animation: progress 7s linear infinite;
-    border-left: 8px solid var(--color-main) ;
-    border-right: 8px solid var(--color-main)  ;
+    animation: progress 3s linear infinite;
+    border-left: 6px solid var(--color-main) ;
+    border-right: 6px solid var(--color-main)  ;
 }
 
 
@@ -57,14 +57,41 @@
 
 @keyframes progress{
     0%{
-        left: -10%;
+        left: -20%;
+        background: black;
+    }
+    1%{
+        left: -20%;
+        background: black;
+    }
+    2%{
+        left: -20%;
         background: var(--color-custom);
     }
-    100%{
+    90%{
         left: 90%;
         background: var(--color-custom);
     }
+    91%{
+        left: 90%;
+        background: black;
+    }
+    100%{
+        left: 110%;
+        background: black;
+    }
 }
+
+//@keyframes progress{
+//    0%{
+//        left: -10%;
+//        background: var(--color-custom);
+//    }
+//    100%{
+//        left: 90%;
+//        background: var(--color-custom);
+//    }
+//}
 
 
 

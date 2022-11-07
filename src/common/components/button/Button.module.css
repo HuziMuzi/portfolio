@@ -6,10 +6,13 @@
     padding: 10px 26px;
     border-radius: 30px;
     font-size: 14px;
-    background-color: var(--color-custom);
+    /*background-color: var(--color-custom);*/
+    background: rgba(0,0,0,0.5);
     border: 1px solid var(--color-custom);
+    transition: all ease-in-out .3s;
 }
 .btn:hover {
-    background-color: #008052;
+    background-color: var(--color-custom);
+    /*color: black;*/
     border: 1px solid transparent;
 }

@@ -1,0 +1,62 @@
+.mainBlock {
+    height: 100vh;
+
+    /*background-color: #2d2d38;*/
+    background-color: var(--color-main);
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    .container{
+        justify-content: center;
+        //justify-content: space-around;
+    }
+}
+
+.text {
+    color: #9f9f9f;
+    width: 500px;
+    background-color: var(--color-block);
+    //margin: 5px;
+    margin-left: 15px;
+
+
+    .title{
+        margin-bottom: 5px;
+    }
+
+    .name {
+        font-size: 36px;
+        line-height: 56px;
+        font-weight: 600;
+    }
+    .aboutMe {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+.photoBlock {
+    //color: white;
+    align-items: center;
+    //background-color: #626262;
+    //margin: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+.photo {
+
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 15px solid #606060;
+}
+
+}

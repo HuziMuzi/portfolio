@@ -11,13 +11,13 @@ import calculator from "./../assets/image/calculator.jpeg"
 const MyProjects = () => {
 
     const socialMediaImg = {
-        backgroundImage: `url(${socialMedia})`
+        backgroundImage: `${socialMedia}`
     }
     const todoListsImg = {
-        backgroundImage: `url(${todo})`
+        backgroundImage: `${todo}`
     }
     const calculatorImg = {
-        backgroundImage: `url(${todo})`
+        backgroundImage: `${todo}`
     }
 
 

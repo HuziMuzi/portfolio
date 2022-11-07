@@ -12,12 +12,14 @@ import {SiRedux} from "@react-icons/all-files/si/SiRedux";
 import {DiGitBranch} from "@react-icons/all-files/di/DiGitBranch";
 import {DiSass} from "@react-icons/all-files/di/DiSass";
 import {SiMaterialUi} from "@react-icons/all-files/si/SiMaterialUi";
+import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1";
 
 
 export const Skills = () => {
 
     const styleIcons = {
-        size: '4em',
+        size: '42px',
+
 
     }
 
@@ -26,13 +28,15 @@ export const Skills = () => {
             id: 1,
             title: 'JavaScript',
             description: 'Hello big world. I;m happy',
-            icon: <SiJavascript {...styleIcons} color={'#ead41c'}/>
+            icon: <DiJavascript1 {...styleIcons} color={'#ead41c'}/>,
+            // styleColor : '#ead41c'
         },
         {
             id: 2,
             title: 'TypeScript',
             description: 'Hello big world. I;m happy',
-            icon: <SiTypescript  {...styleIcons} color={'#2f74c0'}/>
+            icon: 'TS'
+                // <SiTypescript  {...styleIcons} color={'#2f74c0'}/>
         },
         {
             id: 3,
@@ -74,7 +78,8 @@ export const Skills = () => {
             id: 1,
             title: 'Material UI',
             description: 'Hello big world. I;m happy',
-            icon: <SiMaterialUi {...styleIcons} color={'#0279f2'}/>
+            icon: <SiMaterialUi {...styleIcons} color={'#0279f2'}/>,
+
         },
 
     ]
@@ -88,7 +93,9 @@ export const Skills = () => {
                     {skills.map(skill => <Skill
                         title={skill.title}
                         description={skill.description}
-                        icon={skill.icon}/>)}
+                        icon={skill.icon}
+                        // styleColor={skill.styleColor}
+                    />)}
                 </div>
             </div>
         </div>
