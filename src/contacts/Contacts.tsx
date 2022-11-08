@@ -12,7 +12,7 @@ const Contacts = () => {
     return (
         <div className={style.contacts}>
             <div className={`${styleContainer.container} ${style.container}`}>
-                <Title text='Contacts'/>
+                <Title text='Get in ' spanText={'Touch'}/>
                 <div className={style.contactsContainer}>
                     <form className={style.form} action="#">
                         {/*<h4 className={style.formTitle}>Message me</h4>*/}

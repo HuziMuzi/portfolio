@@ -3,15 +3,25 @@
     background-color: var(--color-main);
     /*background-color: #3b3b49;*/
     padding-bottom: 30px;
+
+    .skillsContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+
+        .skills{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border-top: 1px dashed hsla(0,0%,100%,.15);
+        }
+    }
+
 }
 
-.skillsContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: start;
 
-}
 
 .title {
     position: relative;
@@ -27,62 +37,4 @@
     line-height: 100%;
 }
 
-.animatedBar{
-    background-color: var(--color-custom);
-    content: '';
-    display: block;
-    height: 4px;
-    left: 0;
-    margin: 0 auto 0 auto;
-    position: relative;
-    right: 0;
-    width: 75px;
-}
-.animatedBar:before{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: barAnimation;
-    -webkit-animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-name: barAnimation;
-    animation-timing-function: linear;
-    background-color: #101010;
-    content: '';
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 4px;
-}
-.animatedBar:after{
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: barAnimation;
-    -webkit-animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-name: barAnimation;
-    animation-timing-function: linear;
-    background-color: #101010;
-    content: '';
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 4px;
-}
 
-
-
-
-
-
-
-
-
-.skills{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}

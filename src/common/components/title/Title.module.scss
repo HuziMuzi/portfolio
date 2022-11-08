@@ -1,105 +1,84 @@
-.skillsBlock {
 
-    background-color: var(--color-main);
-    /*background-color: #3b3b49;*/
-    padding-bottom: 30px;
-}
 
-.skillsContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: start;
 
+.titleBlock{
+    margin-top: 100px;
+    //display: flex;
+    //justify-content: start;
 }
 
 .title {
-    position: relative;
+
+
 }
 
 .title h2 {
     margin: 0 0 37px 0;
-
+    text-align: left;
     display: inline-block;
     font-size: 38px;
     font-weight: 700;
     letter-spacing: -.25px;
     line-height: 100%;
-}
 
-.animatedBar{
-    position: relative;
-    /*height: .5rem;*/
-    background: var(--color-custom);
-    content: '';
-    display: block;
-    height: 4px;
-    left: 0;
-    margin: 0 auto 0 auto;
-    position: relative;
-    right: 0;
-    width: 80px;
-}
-.animatedBar:before{
-    content: '';
-    position: absolute;
-    left: -15%;
-    width: 5px;
-    height: 100%;
-    background: red;
-    animation: progress 3s linear infinite;
-    border-left: 6px solid var(--color-main) ;
-    border-right: 6px solid var(--color-main)  ;
-}
-
-
-
-
-@keyframes progress{
-    0%{
-        left: -20%;
-        background: black;
-    }
-    1%{
-        left: -20%;
-        background: black;
-    }
-    2%{
-        left: -20%;
-        background: var(--color-custom);
-    }
-    90%{
-        left: 90%;
-        background: var(--color-custom);
-    }
-    91%{
-        left: 90%;
-        background: black;
-    }
-    100%{
-        left: 110%;
-        background: black;
+    span{
+        color : var(--color-custom);
+        font-weight: 700;
     }
 }
 
+//.animatedBar{
+//    position: relative;
+//    /*height: .5rem;*/
+//    background: var(--color-custom);
+//    content: '';
+//    display: block;
+//    height: 4px;
+//    left: 0;
+//    margin: 0 auto 0 auto;
+//    position: relative;
+//    right: 0;
+//    width: 80px;
+//}
+//.animatedBar:before{
+//    content: '';
+//    position: absolute;
+//    left: -15%;
+//    width: 5px;
+//    height: 100%;
+//    background: red;
+//    animation: progress 3s linear infinite;
+//    border-left: 6px solid var(--color-main) ;
+//    border-right: 6px solid var(--color-main)  ;
+//}
+//
+//
+//
+//
 //@keyframes progress{
 //    0%{
-//        left: -10%;
+//        left: -20%;
+//        background: black;
+//    }
+//    1%{
+//        left: -20%;
+//        background: black;
+//    }
+//    2%{
+//        left: -20%;
 //        background: var(--color-custom);
 //    }
-//    100%{
+//    90%{
 //        left: 90%;
 //        background: var(--color-custom);
 //    }
+//    91%{
+//        left: 90%;
+//        background: black;
+//    }
+//    100%{
+//        left: 110%;
+//        background: black;
+//    }
 //}
 
-
-
-
-.skills{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}

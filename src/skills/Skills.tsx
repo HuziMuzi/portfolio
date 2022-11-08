@@ -15,10 +15,25 @@ import {SiMaterialUi} from "@react-icons/all-files/si/SiMaterialUi";
 import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1";
 
 
+
+import JavaScriptIcon from "../assets/skillIcon/JavaScriptIcon";
+import ReactIcon from "../assets/skillIcon/ReactIcon";
+import ReduxIcon from "../assets/skillIcon/ReduxIcon";
+import SassIcon from "../assets/skillIcon/SassIcon";
+import StyledComponentsIcon from "../assets/skillIcon/StyledComponentsIcon";
+import TypeScriptIcon from "../assets/skillIcon/TypeScriptIcon";
+import FormikIcon from "../assets/skillIcon/FormikIcon";
+import APIIcon from "../assets/skillIcon/APIIcon";
+import AxiosIcon from "../assets/skillIcon/AxiosIcon";
+import HtmlIcon from "../assets/skillIcon/HtmlIcon";
+import CssIcon from "../assets/skillIcon/CssIcon";
+import GitIcon from "../assets/skillIcon/GitIcon";
+
+
 export const Skills = () => {
 
     const styleIcons = {
-        size: '42px',
+        size: '50px',
 
 
     }
@@ -26,61 +41,93 @@ export const Skills = () => {
     const skills = [
         {
             id: 1,
-            title: 'JavaScript',
+            title: 'React',
             description: 'Hello big world. I;m happy',
-            icon: <DiJavascript1 {...styleIcons} color={'#ead41c'}/>,
+            icon: <ReactIcon />,
             // styleColor : '#ead41c'
         },
         {
             id: 2,
-            title: 'TypeScript',
+            title: 'Redux',
             description: 'Hello big world. I;m happy',
-            icon: 'TS'
-                // <SiTypescript  {...styleIcons} color={'#2f74c0'}/>
+            icon: <ReduxIcon/>
         },
         {
             id: 3,
+            title: 'TypeScript',
+            description: 'Hello big world. I;m happy',
+            icon: <TypeScriptIcon/>
+        },
+        {
+            id: 4,
+            title: 'JavaScript',
+            description: 'Hello big world. I;m happy',
+            icon: <JavaScriptIcon/>
+        },
+        {
+            id: 5,
             title: 'HTML5',
             description: 'Hello big world. I;m happy',
-            icon: <IoLogoHtml5 {...styleIcons} color={'#e56028'}/>
+            icon: <HtmlIcon/>
         },
         {
-            id: 1,
+            id: 6,
             title: 'CSS3',
             description: 'Hello big world. I;m happy',
-            icon: <DiCss3 {...styleIcons} color={'#136cae'}/>
+            icon: <CssIcon/>
         },
         {
-            id: 1,
-            title: 'React',
+            id: 7,
+            title: 'Git',
             description: 'Hello big world. I;m happy',
-            icon: <FaReact {...styleIcons} color={'#5ccfee'}/>
+            icon: <GitIcon/>
         },
         {
-            id: 1,
-            title: 'Redux',
-            description: 'Hello big world. I;m happy',
-            icon: <SiRedux {...styleIcons} color={'#7046b2'}/>
-        },
-        {
-            id: 1,
-            title: 'git',
-            description: 'Hello big world. I;m happy',
-            icon: <DiGitBranch {...styleIcons} color={'#e44c30'}/>
-        },
-        {
-            id: 1,
+            id: 8,
             title: 'SASS',
             description: 'Hello big world. I;m happy',
-            icon: <DiSass {...styleIcons} color={'#c36191'}/>
+            icon: <SassIcon/>
         },
         {
-            id: 1,
+            id: 9,
             title: 'Material UI',
             description: 'Hello big world. I;m happy',
             icon: <SiMaterialUi {...styleIcons} color={'#0279f2'}/>,
 
         },
+        {
+            id: 10,
+            title: `Styled`,
+            span : 'Component',
+            description: 'Hello big world. I;m happy',
+            icon: <StyledComponentsIcon/>,
+
+        },
+
+        {
+            id: 11,
+            title: 'Formik',
+            description: 'Hello big world. I;m happy',
+            icon: <FormikIcon/>,
+
+        },
+
+        {
+            id: 12,
+            title: 'REST-API',
+            description: 'Hello big world. I;m happy',
+            icon: <APIIcon/>,
+
+        },
+
+        {
+            id: 13,
+            title: 'Axios',
+            description: 'Hello big world. I;m happy',
+            icon: <AxiosIcon/>,
+
+        },
+
 
     ]
 
@@ -88,13 +135,14 @@ export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title text='What I do'/>
+                <Title text={`My`} spanText={'Skill'}/>
+
                 <div className={style.skills}>
                     {skills.map(skill => <Skill
                         title={skill.title}
                         description={skill.description}
                         icon={skill.icon}
-                        // styleColor={skill.styleColor}
+                        span={skill.span}
                     />)}
                 </div>
             </div>
