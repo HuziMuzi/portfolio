@@ -8,32 +8,50 @@ type projectPropsType = {
     styles?: {
         backgroundImage: string
     }
+    positionRight?: any
 }
 
-const Project: FC<projectPropsType> = ({title, description, styles}) => {
-    return (
-        <div className={style.projectBlock}>
-            <ul className={style.hoverEffect}>
-                <li>
+const Project: FC<projectPropsType> = ({title, description, styles, positionRight}) => {
 
-                    <img src={styles ? styles.backgroundImage : ''} alt="img" className={style.imgBlock}/>
-                    {/*<div style={styles} className={style.imgBlock}>*/}
-                    {/*    <Button>Смотреть</Button>*/}
-                    {/*</div>*/}
-                    <div className={style.textBlock}>
-                        <h4 className={style.title}>{title}</h4>
-                        <p>{description}</p>
-                        <Button className={style.btn}>Смотреть</Button>
-                    </div>
-                {/*<div style={styles} className={style.imgBlock}>*/}
-                {/*    <Button>Смотреть</Button>*/}
-                {/*</div>*/}
-                {/*<div className={style.textBlock}>*/}
-                {/*    <h4 className={style.title}>{title}</h4>*/}
-                {/*    <p className={style.description}>{description}</p>*/}
-                {/*</div>*/}
-                </li>
-            </ul>
+
+
+
+
+    return (
+        <div className={`${style.projectBlock}`} style={positionRight}>
+
+            <div style={styles} className={style.imgBlock}>
+                <Button>Смотреть</Button>
+            </div>
+            <div className={style.textBlock} style={positionRight}>
+                <h4 className={style.title}>{title}</h4>
+                <p className={style.description}>{description}</p>
+            </div>
+
+
+
+            {/*<img src={styles ? styles.backgroundImage : ''} alt="img" className={style.imgBlock}/>*/}
+
+            {/*<ul className={style.hoverEffect}>*/}
+            {/*    <li>*/}
+
+            {/*        <img src={styles ? styles.backgroundImage : ''} alt="img" className={style.imgBlock}/>*/}
+
+            {/*        <div className={style.textBlock}>*/}
+            {/*            <h4 className={style.title}>{title}</h4>*/}
+            {/*            <p>{description}</p>*/}
+            {/*            <Button className={style.btn}>Смотреть</Button>*/}
+            {/*        </div>*/}
+
+            {/*<div style={styles} className={style.imgBlock}>*/}
+            {/*    <Button>Смотреть</Button>*/}
+            {/*</div>*/}
+            {/*<div className={style.textBlock}>*/}
+            {/*    <h4 className={style.title}>{title}</h4>*/}
+            {/*    <p className={style.description}>{description}</p>*/}
+            {/*</div>*/}
+            {/*</li>*/}
+            {/*</ul>*/}
         </div>
     );
 };

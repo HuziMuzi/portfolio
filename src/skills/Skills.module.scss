@@ -1,7 +1,6 @@
 .skillsBlock {
 
     background-color: var(--color-main);
-    /*background-color: #3b3b49;*/
     padding-bottom: 30px;
 
     .skillsContainer{
@@ -15,6 +14,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            padding-top: 10px;
             border-top: 1px dashed hsla(0,0%,100%,.15);
         }
     }

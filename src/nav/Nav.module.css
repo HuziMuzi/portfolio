@@ -24,3 +24,8 @@ a {
     color: var(--color-custom);
     /*text-decoration: underline;*/
 }
+
+
+.active {
+    color: var(--color-custom);
+}

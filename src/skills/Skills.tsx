@@ -44,7 +44,6 @@ export const Skills = () => {
             title: 'React',
             description: 'Hello big world. I;m happy',
             icon: <ReactIcon />,
-            // styleColor : '#ead41c'
         },
         {
             id: 2,
@@ -88,13 +87,13 @@ export const Skills = () => {
             description: 'Hello big world. I;m happy',
             icon: <SassIcon/>
         },
-        {
-            id: 9,
-            title: 'Material UI',
-            description: 'Hello big world. I;m happy',
-            icon: <SiMaterialUi {...styleIcons} color={'#0279f2'}/>,
-
-        },
+        // {
+        //     id: 9,
+        //     title: 'Material UI',
+        //     description: 'Hello big world. I;m happy',
+        //     icon: <SiMaterialUi {...styleIcons} color={'#0279f2'}/>,
+        //
+        // },
         {
             id: 10,
             title: `Styled`,
@@ -136,7 +135,6 @@ export const Skills = () => {
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title text={`My`} spanText={'Skill'}/>
-
                 <div className={style.skills}>
                     {skills.map(skill => <Skill
                         title={skill.title}

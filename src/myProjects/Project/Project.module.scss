@@ -1,22 +1,37 @@
 .projectBlock {
-  width: 340px;
-  background-color: var(--color-block);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 20px 20px 20px;
-  border-bottom: 1px solid var(--color-block);
-  border-radius: 15px;
+  //width: 320px;
+  //height: 200px;
+  //background-color: var(--color-block);
+  //display: flex;
+  //justify-content: space-around;
+  ////flex-direction: column;
+  //align-items: center;
+  //text-align: center;
+  //margin: 0 20px 20px 20px;
+  //border-bottom: 1px solid var(--color-block);
+  //border-radius: 15px;
 
-  &:hover {
-    border-bottom: 1px solid #009e66;
-  }
+  grid-gap: 50px;
+  align-items: center;
+  -webkit-column-gap: 50px;
+  column-gap: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  position: relative;
+  row-gap: 50px;
+  z-index: 1;
+  margin-bottom: 20px;
+  text-align: right;
+
+
+  //&:hover {
+  //  border-bottom: 1px solid #009e66;
+  //}
   .imgBlock {
     border-radius: 15px;
-
-    width: 340px;
-    min-height: 300px;
+    width: 320px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +39,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+
     &:before {
       position: absolute;
       content: '';
@@ -37,6 +53,8 @@
   }
   .textBlock {
     padding: 10px 0;
+    //margin-left: 40px;
+    text-align: right;
   }
   .title {
     line-height: 30px;
@@ -56,95 +74,95 @@
 
 
 
-/* Настройки маркированного списка */
-
-.hoverEffect{
-  list-style:none;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-
-}
-
-.hoverEffect li {
-  position: relative;
-  display: inline-block;
-  //background-color: #fff;
-  margin: 0;
-  //border: 5px solid #fff;
-  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  border-radius: 15px;
-  opacity: 0.9;
-
-}
-/* Заголовок, текст и ссылка */
-.hoverEffect li h4{
-  color: #fff;
-  margin: 5px;
-  border-radius: 15px;
-
-}
-.hoverEffect li p{
-  color: #9f9f9f;
-  margin: 10px;
-  border-radius: 15px;
-
-}
-.hoverEffect li .btn {
-  //display: block;
-  //text-decoration: none;
-  //padding: 15px;
-  //color: #fff;
-  //background: #000;
-  //border-radius: 5px;
-  margin: 0 auto;
-  width: 160px;
-
-  transition: all 0.1s ease-in-out;
-}
-//.hoverEffect li a:hover {
-//  background: #454545;
+///* Настройки маркированного списка */
+//
+//.hoverEffect{
+//  list-style:none;
+//  margin: 0 auto;
+//  width: 100%;
+//  text-align: center;
+//  padding: 0;
+//
+//}
+//
+//.hoverEffect li {
+//  position: relative;
+//  display: inline-block;
+//  //background-color: #fff;
+//  margin: 0;
+//  //border: 5px solid #fff;
+//  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+//  overflow: hidden;
+//  border-radius: 15px;
+//  opacity: 0.9;
+//
+//}
+///* Заголовок, текст и ссылка */
+//.hoverEffect li h4{
+//  color: #fff;
+//  margin: 5px;
+//  border-radius: 15px;
+//
+//}
+//.hoverEffect li p{
+//  color: #9f9f9f;
+//  margin: 10px;
+//  border-radius: 15px;
+//
+//}
+//.hoverEffect li .btn {
+//  //display: block;
+//  //text-decoration: none;
+//  //padding: 15px;
+//  //color: #fff;
+//  //background: #000;
+//  //border-radius: 5px;
+//  margin: 0 auto;
+//  width: 160px;
+//
+//  transition: all 0.1s ease-in-out;
+//}
+////.hoverEffect li a:hover {
+////  background: #454545;
+////  color: #fff;
+////}
+///* Выезжающий блок с текстом */
+//.hoverEffect li > div {
+//  width: 100%;
+//  height: 100%;
+//  position: absolute;
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//
+//}
+//.hoverEffect li:hover > div {
+//  position: absolute;
+//  overflow: hidden;
+//  top: 0;
+//  left: 0;
+//}
+//.hoverEffect li div {
+//  //opacity: 0;
+//  //background-color: rgba(0, 0, 0, 0.35); /* Фон блока при наведении */
+//  transition: all 0.1s ease-in-out;
 //  color: #fff;
 //}
-/* Выезжающий блок с текстом */
-.hoverEffect li > div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-}
-.hoverEffect li:hover > div {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-.hoverEffect li div {
-  //opacity: 0;
-  //background-color: rgba(0, 0, 0, 0.35); /* Фон блока при наведении */
-  transition: all 0.1s ease-in-out;
-  color: #fff;
-}
-.hoverEffect li img {
-
-  transition: all 0.2s linear;
-}
-.hoverEffect li:hover img {
-  //-webkit-filter: blur(1px);
-  //-moz-filter: blur(1px);
-  //-o-filter: blur(1px);
-  //-ms-filter: blur(1px);
-  //filter: blur(1px);
-  border-radius: 15px;
-
-  opacity: 0.2;
-  transform: scale(1.2);
-}
-.hoverEffect li:hover div {
-  opacity: 1;
-}
+//.hoverEffect li img {
+//
+//  transition: all 0.2s linear;
+//}
+//.hoverEffect li:hover img {
+//  //-webkit-filter: blur(1px);
+//  //-moz-filter: blur(1px);
+//  //-o-filter: blur(1px);
+//  //-ms-filter: blur(1px);
+//  //filter: blur(1px);
+//  border-radius: 15px;
+//
+//  opacity: 0.2;
+//  transform: scale(1.2);
+//}
+//.hoverEffect li:hover div {
+//  opacity: 1;
+//}

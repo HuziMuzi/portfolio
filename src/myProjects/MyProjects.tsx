@@ -11,13 +11,18 @@ import calculator from "./../assets/image/calculator.jpeg"
 const MyProjects = () => {
 
     const socialMediaImg = {
-        backgroundImage: `${socialMedia}`
+        backgroundImage: `url(${socialMedia})`
     }
     const todoListsImg = {
-        backgroundImage: `${todo}`
+        backgroundImage: `url(${todo})`
     }
     const calculatorImg = {
-        backgroundImage: `${todo}`
+        backgroundImage: `url(${todo})`
+    }
+
+    const reversStyle = {
+        flexDirection : 'row-reverse',
+        textAlign: 'left'
     }
 
 
@@ -35,6 +40,7 @@ const MyProjects = () => {
                         description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
                         title={'Sotial media'}
                         styles={socialMediaImg}
+                        positionRight={reversStyle}
                     />
                     <Project
                         description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
