@@ -1,0 +1,14 @@
+@mixin gap($column-gap, $row-gap: $column-gap) {
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+  gap: $column-gap;
+  grid-gap: $column-gap;
+}
+
+
+
+@mixin flex($direction, $align: initial) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+}

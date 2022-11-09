@@ -1,7 +1,7 @@
 .mainBlock {
     position: relative;
     height: 100vh;
-
+    overflow-y: hidden;
     /*background-color: #2d2d38;*/
     background-color: var(--color-main);
     padding-bottom: 30px;
@@ -87,6 +87,7 @@
     .icon{
         color:var(--color-custom) ;
         display: block;
+
     }
 
     .politicks {

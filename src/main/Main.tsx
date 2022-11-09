@@ -16,14 +16,69 @@ export const Main = () => {
 
      const animateBlock = {
         whileHover:{ scale: 1.05 },
-    transition:{ type: "spring", stiffness: 400, damping: 5 }
+        transition:{ type: "spring", stiffness: 400, damping: 5 }
     }
 
 
-    // const
+    const socialMediaData = [
+        {
+            id:1,
+            link: 'https://t.me/Huzi_Muzi',
+            icon: <FaTelegramPlane size='2em'/>
+        },
+        {
+            id:2,
+            link: 'https://www.linkedin.com/in/andrei-davidovich-3212b8233',
+            icon: <AiFillLinkedin size='2em'/>
+        },
+        {
+            id:3,
+            link: 'https://www.codewars.com/users/forgys17860',
+            icon: <SiCodewars size='2em'/>
+        },
+        {
+            id:4,
+            link: 'https://github.com/HuziMuzi',
+            icon: <AiFillGithub size='2em'/>
+        },
+    ]
+
+    const iconSocialMediaAnimation = {
+         hidden: {
+             x: 100,
+             opacity :0,
+         },
+         visible : {
+            x: 0,
+            opacity: 1,
+             transition: { delay: 0.5}
+         }
+    }
+
+    const contentAnimation = {
+        hidden: {
+            y: 20,
+            opacity :0,
+        },
+        visible : {
+            y: 10,
+            // duration: .2,
+            opacity: 1,
+            transition: {
+                delay: 0.1,
+                ease: 'linear',
+                // times: [0, 0.2, 1]
+            }
+        },
+
+    }
 
     return (
-        <div className={style.mainBlock}>
+        <motion.div
+            initial='hidden'
+            animate='visible'
+            variants={contentAnimation}
+            className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.container}`}>
 
                 <div className={style.photoBlock}>
@@ -53,25 +108,17 @@ export const Main = () => {
             </div>
 
             <div className={style.socialMedia}>
+                {socialMediaData.map(item =><motion.div
+                    variants={iconSocialMediaAnimation}
+                >
                     <span className={style.socialMediaBlock}>
-                        <a href='https://t.me/Huzi_Muzi'>
-                        <FaTelegramPlane size='2em' className={style.icon}/>
-                        {/*<p>telegram</p>*/}
-                        </a></span>
-                <span className={style.socialMediaBlock}> <a
-                    href='https://www.linkedin.com/in/andrei-davidovich-3212b8233/'>
-                        <AiFillLinkedin size='2em' className={style.icon}/>
-                    {/*<p>linkedin</p>*/}
-                    </a></span>
-                <span className={style.socialMediaBlock}> <a href='https://www.codewars.com/users/forgys17860'>
-                         <SiCodewars size='2em' className={style.icon}/>
-                    {/*<p>codewars</p>*/}
-
-                    </a></span>
-                <span className={style.socialMediaBlock}> <a href='https://github.com/HuziMuzi'>
-                        <AiFillGithub size='2em' className={style.icon}/>
-                    {/*<p>github</p>*/}
-                    </a></span>
+                        <a href={item.link}>
+                            <div className={style.icon}>
+                                {item.icon}
+                            </div>
+                        </a>
+                </span>
+                </motion.div> )}
             </div>
 
 
@@ -126,6 +173,6 @@ export const Main = () => {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }

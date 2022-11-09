@@ -36,12 +36,10 @@ const skillsVisible = {
 // props.styleColor ? `${style.iconBlock} ${props.styleColor}`  :
 export const Skill = (props: skillTypeProps) => {
 
-    // const [isOpen, setIsOpen] = useState(false);
 
     return (
         <motion.div initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
-                    // variants={skillsVisible}
                     transition={{
                         delay: (props.customDelay? props.customDelay : 1) * 0.2,
                         scale: {
