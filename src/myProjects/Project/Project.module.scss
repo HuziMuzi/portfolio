@@ -4,7 +4,6 @@
   grid-gap: 50px;
   align-items: center;
   -webkit-column-gap: 50px;
-  column-gap: 50px;
   display: flex;
   flex-direction: row-reverse;
   gap: 50px;
@@ -12,8 +11,6 @@
   row-gap: 50px;
   z-index: 1;
   margin-bottom: 20px;
-  //text-align: right;
-
 
 
   .imgBlock {
@@ -24,6 +21,7 @@
     min-width: 320px;
     max-width: 400px;
     box-shadow: 20px 20px 0 0 rgba(42, 42, 42, 0.33), inset -20px -20px 100px 1px var(--color-custom);
+
     .img {
       z-index: -1;
     }
@@ -34,6 +32,7 @@
       height: 200px;
       border-radius: 20px;
     }
+
     &:hover {
       .shadow {
         opacity: 1;
@@ -41,8 +40,8 @@
     }
 
 
-     .shadow {
-       @include flex(row, center);
+    .shadow {
+      @include flex(row, center);
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -50,7 +49,7 @@
       height: 100%;
       width: 100%;
       position: absolute;
-      background-color: rgba(125, 183, 132, 0.6);
+      background-color: rgba(30, 30, 30, 0.84);
       border-radius: inherit;
       opacity: 0;
       backdrop-filter: blur(2px);
@@ -58,14 +57,22 @@
       transition: 0.5s;
     }
 
+    @media all and (max-width: 1050px) {
+      max-width: 100%;
+    }
 
+    @media all and (max-width: 900px) {
+      display: block;
+    }
 
 
   }
+
   .textBlock {
     padding: 10px 0;
     text-align: left;
   }
+
   .title {
     line-height: 30px;
     font-weight: 600;
@@ -73,15 +80,24 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
+
   .description {
     font-weight: 400;
     color: #9f9f9f;
     font-size: 14px;
     margin-bottom: 7px;
   }
+
+
+  @media all and (max-width: 1050px) {
+
+    //display: block;
+    flex-direction: column!important;
+    text-align: center;
+    gap: 20px;
+
+  }
 }
-
-
 
 
 ///* Настройки маркированного списка */

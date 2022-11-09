@@ -1,186 +1,128 @@
-.mainBlock {
-    position: relative;
-    height: 100vh;
-    overflow-y: hidden;
-    /*background-color: #2d2d38;*/
-    background-color: var(--color-main);
-    padding-bottom: 30px;
-    padding-top: 20px;
+@import '../styles/mixins';
 
-    .container{
-        justify-content: center;
-        //justify-content: space-around;
-    }
+.mainBlock {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+  /*background-color: #2d2d38;*/
+  background-color: var(--color-main);
+  //padding-bottom: 30px;
+  padding-top: 20px;
+
+  .container {
+    justify-content: center;
+    //justify-content: space-around;
+  }
 }
 
 .text {
-    color: #9f9f9f;
-    width: 500px;
-    //background-color: var(--color-block);
-    //margin: 5px;
-    margin-left: 15px;
+  color: #9f9f9f;
+  width: 500px;
+  //background-color: var(--color-block);
+  //margin: 5px;
+  margin-left: 15px;
 
 
-    .title{
-        margin-bottom: 5px;
+  .title {
+    margin-bottom: 5px;
+  }
+
+  .name {
+
+    font-size: 36px;
+    //line-height: 56px;
+    line-height: 40px;
+    letter-spacing: 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+
+    span {
+      color: var(--color-custom);
+      font-weight: 600;
+
     }
+  }
 
-    .name {
-
-        font-size: 36px;
-        //line-height: 56px;
-        line-height: 40px;
-        letter-spacing: 0;
-        font-weight: 600;
-        padding-bottom: 10px;
-        margin-bottom: 12px;
-        border-bottom: 1px dashed hsla(0,0%,100%,.15);
-        span {
-            color: var(--color-custom);
-            font-weight: 600;
-
-        }
-    }
-    .aboutMe {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 20px;
-    }
+  .aboutMe {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
 
 }
 
 
-
-
 .photoBlock {
-    //color: white;
-    align-items: center;
-    //background-color: #626262;
-    //margin: 5px;
-    border-radius: 50%;
-    margin-right: 15px;
+  //color: white;
+  align-items: center;
+  //background-color: #626262;
+  //margin: 5px;
+  border-radius: 50%;
+  margin-right: 15px;
 
-.photo {
+  .photo {
 
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 15px solid #606060;
-}
+  }
 
 }
 
 
-.socialMedia{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    content: '';
-    right: 30px;
-    bottom: 100px;
+.socialMedia {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  content: '';
+  right: 30px;
+  bottom: 100px;
 
-    .icon{
-        color:var(--color-custom) ;
-        display: block;
+  .icon {
+    color: var(--color-custom);
+    display: block;
 
-    }
+  }
 
-    .politicks {
-        color: #2a2a2a;
-    }
+  .politicks {
+    color: #2a2a2a;
+  }
 
-    .socialMediaBlock {
-        text-align: center;
-        margin: 0px 5px;
-        border-radius: 10px;
-    }
+  .socialMediaBlock {
+    text-align: center;
+    margin: 0px 5px;
+    border-radius: 10px;
+  }
 
-    .socialMediaBlock a {
-        display: inline-block;
+  .socialMediaBlock a {
+    display: inline-block;
 
-        cursor: pointer;
-        color: #3b3b49;
-        //padding: 10px;
+    cursor: pointer;
+    color: #3b3b49;
+    //padding: 10px;
 
-    }
+  }
 
 
 }
 
 
-
-.buttons{
-    display: flex;
+.buttons {
+  display: flex;
 
 }
-.btnCV{
-    margin-right: 25px;
+
+.btnCV {
+  margin-right: 25px;
 }
 
 
-
-.popUp{
-    .popUpContainer{
-        position: relative;
-
-        width: 60%;
-        background-color: #222;
-        margin: 0 auto;
-    }
-
-    .btnPop{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 35px;
-        height: 35px;
-        display: inline-block;
-    }
-
-
-
-    .contentBlock{
-        display: flex;
-
-
-    }
-
-    .contactInfoBlock{
-        
-        
-        .author{
-            .imgPop{
-                width: 260px;
-                height: 200px;
-                background-color: #494949;
-            }
-
-            .popName{
-                text-align: center;
-                color: #f0f0f0;
-                font-size: 19px;
-                //line-height: 40px;
-                //letter-spacing: 0;
-                font-weight: 600;
-                padding-bottom: 10px;
-                margin-bottom: 12px;
-                border-bottom: 1px dashed hsla(0,0%,100%,.15);
-                span {
-                    color: var(--color-custom);
-                    font-weight: 600;
-
-                }
-            }
-        }
-    }
-
-    
-    .aboutMeBlock{
-
-    }
-}

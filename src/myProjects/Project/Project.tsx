@@ -31,7 +31,6 @@ const Project: FC<projectPropsType> = ({title, description, styles, positionRigh
                 <p className={style.description}>{description}</p>
             </div>
 
-
             {/*<img src={styles ? styles.backgroundImage : ''} alt="img" className={style.imgBlock}/>*/}
 
             {/*<ul className={style.hoverEffect}>*/}

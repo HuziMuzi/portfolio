@@ -1,0 +1,97 @@
+@import '../../styles/mixins';
+
+.popUp {
+    .popUpContainer {
+        //position: fixed;
+        //left: 20%;
+        //top: 10%;
+        position: relative;
+        border-radius: 10px;
+
+        width: 60%;
+        background-color: #222;
+        margin: 0 auto;
+    }
+
+    .btnPop {
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding: 3px;
+        border: 1px solid floralwhite;
+        display: inline-block;
+    }
+
+
+    .contentBlock {
+        display: flex;
+
+
+    }
+
+    .contactInfoBlock {
+        padding: 50px 40px;
+
+        border-right: 1px dashed hsla(0,0%,100%,.15);
+
+        .author {
+            width: 239px;
+            .imgPop {
+                margin: 0 auto;
+
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+
+                .img {
+                    display: block;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+            }
+
+            .popName {
+                text-align: center;
+                text-transform: uppercase;
+                color: #f0f0f0;
+                font-size: 19px;
+                //line-height: 40px;
+                //letter-spacing: 0;
+                font-weight: 600;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+
+                span {
+                    color: var(--color-custom);
+                    font-weight: 600;
+
+                }
+            }
+        }
+    }
+
+
+    .aboutMeBlock {
+
+    }
+}
+
+.mediaBody{
+    @include flex(row,center);
+    //display: flex;
+    border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+    padding: 10px 0;
+    .infoIcon{
+        padding-right: 37px;
+        color: var(--color-custom);
+    }
+}
+.infoName{
+    font-size: 16px;
+}
