@@ -8,11 +8,19 @@ import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
 import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
+import { motion } from "framer-motion";
 
 
 export const Main = () => {
 
 
+     const animateBlock = {
+        whileHover:{ scale: 1.05 },
+    transition:{ type: "spring", stiffness: 400, damping: 5 }
+    }
+
+
+    // const
 
     return (
         <div className={style.mainBlock}>
@@ -29,14 +37,24 @@ export const Main = () => {
                         convallis,
                         risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi.
                         Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
-                    <Button className={style.btnCV}>Download CV</Button>
-                    <Button>About Me</Button>
+
+                    <div className={style.buttons}>
+                        <motion.div{...animateBlock}>
+                            <Button className={style.btnCV}>Download CV</Button>
+                        </motion.div>
+                        <motion.div{...animateBlock}>
+                            <Button>About Me</Button>
+                        </motion.div>
+
+                    </div>
+
                 </div>
 
             </div>
 
             <div className={style.socialMedia}>
-                    <span className={style.socialMediaBlock}> <a href='https://t.me/Huzi_Muzi'>
+                    <span className={style.socialMediaBlock}>
+                        <a href='https://t.me/Huzi_Muzi'>
                         <FaTelegramPlane size='2em' className={style.icon}/>
                         {/*<p>telegram</p>*/}
                         </a></span>
