@@ -49,19 +49,19 @@ export const Skills = () => {
             id: 2,
             title: 'Redux',
             description: 'Hello big world. I;m happy',
-            icon: <ReduxIcon/>
+            icon: <ReduxIcon/>,
         },
         {
             id: 3,
             title: 'TypeScript',
             description: 'Hello big world. I;m happy',
-            icon: <TypeScriptIcon/>
+            icon: <TypeScriptIcon/>,
         },
         {
             id: 4,
             title: 'JavaScript',
             description: 'Hello big world. I;m happy',
-            icon: <JavaScriptIcon/>
+            icon: <JavaScriptIcon/>,
         },
         {
             id: 5,
@@ -141,6 +141,7 @@ export const Skills = () => {
                         description={skill.description}
                         icon={skill.icon}
                         span={skill.span}
+                        customDelay={skill.id}
                     />)}
                 </div>
             </div>

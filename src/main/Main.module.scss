@@ -87,7 +87,6 @@
     .icon{
         color:var(--color-custom) ;
         display: block;
-        //margin: 0 auto 7px;
     }
 
     .politicks {
@@ -97,9 +96,7 @@
     .socialMediaBlock {
         text-align: center;
         margin: 0px 5px;
-        //padding-top: 17px;
         border-radius: 10px;
-        //transition: all ease-in-out .3s;
     }
 
     .socialMediaBlock a {
@@ -116,4 +113,67 @@
 
 .btnCV{
     margin-right: 25px;
+}
+
+
+
+.popUp{
+    .popUpContainer{
+        position: relative;
+
+        width: 60%;
+        background-color: #222;
+        margin: 0 auto;
+    }
+
+    .btnPop{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+    }
+
+
+
+    .contentBlock{
+        display: flex;
+
+
+    }
+
+    .contactInfoBlock{
+        
+        
+        .author{
+            .imgPop{
+                width: 260px;
+                height: 200px;
+                background-color: #494949;
+            }
+
+            .popName{
+                text-align: center;
+                color: #f0f0f0;
+                font-size: 19px;
+                //line-height: 40px;
+                //letter-spacing: 0;
+                font-weight: 600;
+                padding-bottom: 10px;
+                margin-bottom: 12px;
+                border-bottom: 1px dashed hsla(0,0%,100%,.15);
+                span {
+                    color: var(--color-custom);
+                    font-weight: 600;
+
+                }
+            }
+        }
+    }
+
+    
+    .aboutMeBlock{
+
+    }
 }
