@@ -52,7 +52,7 @@ input, textarea:focus{
 
 body {
     background-color: var(--color-main);
-
+    overflow-y: hidden;
 }
 
 code {

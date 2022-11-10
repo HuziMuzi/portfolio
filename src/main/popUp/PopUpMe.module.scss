@@ -1,97 +1,113 @@
 @import '../../styles/mixins';
 
 .popUp {
-    .popUpContainer {
-        //position: fixed;
-        //left: 20%;
-        //top: 10%;
-        position: relative;
-        border-radius: 10px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
 
-        width: 60%;
-        background-color: #222;
-        margin: 0 auto;
-    }
+  .popUpContainer {
+    position: relative;
+    border-radius: 10px;
+
+    z-index: 24;
+    width: 60%;
+    background-color: var(--color-block);
+    margin: 0 auto;
+  }
+
+  .btnBlock {
+    position: relative;
+    z-index: 21;
+    cursor: pointer;
 
     .btnPop {
-
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        padding: 3px;
-        border: 1px solid floralwhite;
-        display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      padding: 3px;
+      border: 1px solid floralwhite;
+      display: inline-block;
     }
 
 
-    .contentBlock {
-        display: flex;
+  }
 
 
-    }
+  .contentBlock {
+    display: flex;
+    z-index: 20;
 
-    .contactInfoBlock {
-        padding: 50px 40px;
+  }
 
-        border-right: 1px dashed hsla(0,0%,100%,.15);
+  .contactInfoBlock {
+    padding: 50px 40px;
 
-        .author {
-            width: 239px;
-            .imgPop {
-                margin: 0 auto;
+    border-right: 1px dashed hsla(0, 0%, 100%, .15);
 
-                width: 200px;
-                height: 200px;
-                margin-bottom: 20px;
+    .author {
+      width: 239px;
 
-                .img {
-                    display: block;
-                    object-fit: cover;
-                    width: 100%;
-                    height: 200px;
-                    border-radius: 50%;
-                }
-            }
+      .imgPop {
+        margin: 0 auto;
 
-            .popName {
-                text-align: center;
-                text-transform: uppercase;
-                color: #f0f0f0;
-                font-size: 19px;
-                //line-height: 40px;
-                //letter-spacing: 0;
-                font-weight: 600;
-                padding-bottom: 10px;
-                margin-bottom: 30px;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
 
-                span {
-                    color: var(--color-custom);
-                    font-weight: 600;
-
-                }
-            }
+        .img {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 200px;
+          border-radius: 50%;
         }
+      }
+
+      .popName {
+        text-align: center;
+        text-transform: uppercase;
+        color: #f0f0f0;
+        font-size: 19px;
+        //line-height: 40px;
+        //letter-spacing: 0;
+        font-weight: 600;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
+        span {
+          color: var(--color-custom);
+          font-weight: 600;
+
+        }
+      }
     }
+  }
 
 
-    .aboutMeBlock {
-
-    }
+  .aboutMeBlock {
+      color: white;
+    padding: 40px 50px;
+  }
 }
 
-.mediaBody{
-    @include flex(row,center);
-    //display: flex;
-    border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
-    padding: 10px 0;
-    .infoIcon{
-        padding-right: 37px;
-        color: var(--color-custom);
-    }
+.mediaBody {
+  @include flex(row, center);
+  //display: flex;
+  border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+  padding: 10px 0;
+
+  .infoIcon {
+    padding-right: 37px;
+    color: var(--color-custom);
+  }
 }
-.infoName{
-    font-size: 16px;
+
+.infoName {
+  font-size: 16px;
 }

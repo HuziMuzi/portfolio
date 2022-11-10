@@ -8,6 +8,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
+    z-index: 8;
 }
 
 .link{

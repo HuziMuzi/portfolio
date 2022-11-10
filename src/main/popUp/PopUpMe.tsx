@@ -4,7 +4,7 @@ import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
 import {GoLocation} from "@react-icons/all-files/go/GoLocation";
 import {AiOutlinePhone} from "@react-icons/all-files/ai/AiOutlinePhone";
 import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
-import {Fade} from "react-awesome-reveal";
+import {Fade, Reveal} from "react-awesome-reveal";
 
 
 type PopUpMeType = {
@@ -38,13 +38,18 @@ export const PopUpMe = (props : PopUpMeType) => {
     }
 
     return (
-        <Fade>
+
         <div className={style.popUp}>
+            <Fade direction={'up'}>
+
             <div className={style.popUpContainer}>
-                <div  onClick={closePopUp}  className={style.btnPop} >
-                    x
-                    {/*<a  className={style.btnPop}  href="#">x</a>*/}
+                <div className={style.btnBlock}>
+                    <div  onClick={closePopUp}  className={style.btnPop} >
+                        x
+                        {/*<a  className={style.btnPop}  href="#">x</a>*/}
+                    </div>
                 </div>
+
                 <div className={style.contentBlock}>
                     <div className={style.contactInfoBlock}>
                         <div className={style.author}>
@@ -86,8 +91,10 @@ export const PopUpMe = (props : PopUpMeType) => {
                         </p>
                     </div>
                 </div>
+
             </div>
+            </Fade>
+
         </div>
-        </Fade>
     );
 };
