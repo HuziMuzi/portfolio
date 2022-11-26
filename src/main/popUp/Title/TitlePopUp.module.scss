@@ -1,0 +1,12 @@
+.title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+
+  span {
+    font-weight: 600;
+    color: var(--color-custom);
+  }
+}
