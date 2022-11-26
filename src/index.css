@@ -50,10 +50,25 @@ input, textarea:focus{
     --color-block: #161616;
 }
 
+
+html{
+    /*-ms-overflow-style: none;  !* IE 10+ *!*/
+    /*scrollbar-width: none;*/
+}
+
 body {
     background-color: var(--color-main);
-    overflow-y: hidden;
+    overflow-y: scroll;
+
+
 }
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 
 code {
 

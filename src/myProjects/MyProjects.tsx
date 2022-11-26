@@ -5,7 +5,6 @@ import Project from "./Project/Project";
 import {Title} from "../common/components/title/Title";
 import todo from "./../assets/image/todolists.png"
 import socialMedia from "./../assets/image/sotialMedia.png"
-import calculator from "./../assets/image/calculator.jpeg"
 
 
 const MyProjects = () => {
