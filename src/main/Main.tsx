@@ -1,24 +1,24 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import style from './Main.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
-import avatar from '../assets/image/ava.jpeg'
+import avatar from '../assets/image/avatar.jpg'
 import Button from "../common/components/button/Button";
 import {FaTelegramPlane} from "@react-icons/all-files/fa/FaTelegramPlane";
 import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
-import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
 import {motion} from "framer-motion";
 
 import {Bounce, Fade} from "react-awesome-reveal";
 import {PopUpMe} from "./popUp/PopUpMe";
 
 
-type MainPropsType = {
-    setShowPop: (value: boolean) => void
-}
+// type MainPropsType = {
+//     // setShowPop: (value: boolean) => void
+// }
 
-export const Main = (props: MainPropsType) => {
+export const Main = () => {
+    const [showPop, setShowPop] = useState(false)
 
 
     const animateBlock = {
@@ -48,78 +48,50 @@ export const Main = (props: MainPropsType) => {
         },
     ]
 
-    // const iconSocialMediaAnimation = {
-    //     hidden: {
-    //         x: 100,
-    //         opacity: 0,
-    //     },
-    //     visible: {
-    //         x: 0,
-    //         opacity: 1,
-    //         transition: {delay: 0.5}
-    //     }
-    // }
-    //
-    // const contentAnimation = {
-    //     hidden: {
-    //         y: 20,
-    //         opacity: 0,
-    //     },
-    //     visible: {
-    //         y: 10,
-    //         // duration: .2,
-    //         opacity: 1,
-    //         transition: {
-    //             delay: 0.1,
-    //             ease: 'linear',
-    //             // times: [0, 0.2, 1]
-    //         }
-    //     },
-    //
-    // }
-
 
     const showPopUp = () => {
-        props.setShowPop(true)
+        setShowPop(true)
     }
 
     return (
         // <PopUpMe/>
         <div
-            // initial='hidden'
-            // animate='visible'
-            // variants={contentAnimation}
             className={style.mainBlock}>
 
             <div className={`${styleContainer.container} ${style.container}`}>
                 <div className={style.contentBlock}>
 
-                    <Fade>
-                        <div className={style.photoBlock}>
-                            <img className={style.photo}
-                                 src='https://www.peoples.ru/internet/blogger/khasbik/yJ3T4T31j9qIA.jpeg' alt=""/>
-                        </div>
-                        <div className={style.text}>
-                            <div className={style.title}>Frontend-developer</div>
-                            <h1 className={style.name}>Andrei <span>Davidovich</span></h1>
-                            <p className={style.aboutMe}>Fusce tempor magna mi, non egestas velit ultricies nec. Aenean
-                                convallis,
-                                risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu
-                                mi.
-                                Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
+                    {
+                        showPop ? <PopUpMe setShowPop={setShowPop}/>
+                            : <Fade>
+                                <div className={style.photoBlock}>
+                                    <img className={style.photo}
+                                         src={avatar} alt=""/>
+                                    {/*<div className={style.photoMain}></div>*/}
+                                </div>
+                                <div className={style.text}>
+                                    <div className={style.title}>Frontend-developer</div>
+                                    <h1 className={style.name}>Andrei <span>Davidovich</span></h1>
+                                    <p className={style.aboutMe}>Hello everybody! I am a person who has a strong passion for
+                                        programming. I have experience in creating SPA with React/Redux/TypeScript. Now I am
+                                        improving my skills in this direction and expanding them with new technologies. I'm
+                                        planing to study Node.js, because my next focus is to become a Full-Stack Developer.
+                                        Usually I spend my leisure time on Codewars.</p>
 
-                            <div className={style.buttons}>
-                                <motion.div{...animateBlock}>
-                                    <Button className={style.btnCV}>Download CV</Button>
-                                </motion.div>
-                                <motion.div{...animateBlock}>
-                                    <Button onClick={showPopUp}>About Me</Button>
-                                </motion.div>
+                                    <div className={style.buttons}>
+                                        <motion.div{...animateBlock}>
+                                            <Button className={style.btnCV}>Download CV</Button>
+                                        </motion.div>
+                                        <motion.div{...animateBlock}>
+                                            <Button onClick={showPopUp}>About Me</Button>
+                                        </motion.div>
 
-                            </div>
+                                    </div>
 
-                        </div>
-                    </Fade>
+                                </div>
+                            </Fade>
+
+                    }
                 </div>
 
             </div>

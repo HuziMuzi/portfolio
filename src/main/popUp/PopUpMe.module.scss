@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .popUp {
-  height: 100vh;
+  //height: 400px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,19 +9,22 @@
   z-index: 20;
 
   .popUpContainer {
+    display: flex;
     position: relative;
     border-radius: 10px;
-
     z-index: 24;
-    width: 60%;
-    background-color: var(--color-block);
+    //width: 60%;
+    //height: 40%;
+    background-color: #222;
     margin: 0 auto;
+    height: 600px;
   }
 
   .btnBlock {
-    position: relative;
+    //position: relative;
     z-index: 21;
     cursor: pointer;
+
 
     .btnPop {
       position: absolute;
@@ -34,10 +37,7 @@
       border: 1px solid floralwhite;
       display: inline-block;
     }
-
-
   }
-
 
   .contentBlock {
     display: flex;
@@ -55,7 +55,6 @@
 
       .imgPop {
         margin: 0 auto;
-
         width: 200px;
         height: 200px;
         margin-bottom: 20px;
@@ -90,11 +89,44 @@
   }
 
 
-  .aboutMeBlock {
-      color: white;
+  .biography {
+    color: #a2a2a2;
     padding: 40px 50px;
+    width: 500px;
+    overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+
+    .aboutMeBlock {
+      margin-bottom: 55px;
+
+      .aboutMeText {
+        margin-top: 29px;
+
+      }
+    }
+
+    .qualities {
+      margin-top: 29px;
+      margin-bottom: 55px;
+
+      li{
+        margin:  0 0 8px;
+      }
+
+      li::before{
+        content:"\e804";
+      }
+    }
+
+
+  }
+
 }
+
 
 .mediaBody {
   @include flex(row, center);
