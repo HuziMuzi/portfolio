@@ -8,7 +8,6 @@ import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
 import {motion} from "framer-motion";
-
 import {Bounce, Fade} from "react-awesome-reveal";
 import {PopUpMe} from "./popUp/PopUpMe";
 
@@ -80,7 +79,12 @@ export const Main = () => {
 
                                     <div className={style.buttons}>
                                         <motion.div{...animateBlock}>
-                                            <Button className={style.btnCV}>Download CV</Button>
+                                            <Button className={style.btnCV}>
+                                                <a href='https://drive.google.com/file/d/1JIchckNViydFoBVnJXgqc2-SZR8VAiUC/view'
+                                                   target="_blank">
+                                                    Download CV
+                                                </a>
+                                            </Button>
                                         </motion.div>
                                         <motion.div{...animateBlock}>
                                             <Button onClick={showPopUp}>About Me</Button>

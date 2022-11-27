@@ -5,6 +5,7 @@ import Project from "./Project/Project";
 import {Title} from "../common/components/title/Title";
 import todo from "./../assets/image/todolists.png"
 import socialMedia from "./../assets/image/sotialMedia.png"
+import { Slide} from "react-awesome-reveal";
 
 
 const MyProjects = () => {
@@ -20,7 +21,7 @@ const MyProjects = () => {
     }
 
     const reversStyle = {
-        flexDirection : 'row',
+        flexDirection: 'row',
         textAlign: 'left'
     }
 
@@ -29,27 +30,36 @@ const MyProjects = () => {
         <div className={style.myProjectsBlock}>
             <div className={`${styleContainer.container} ${style.container}`}>
                 <Title text='My ' spanText={'Projects'}/>
+
                 <div className={style.projects}>
+                    <Slide direction={'left'}>
+
                     <Project
                         description={'Descriptions my project it"s very good.Descriptions my project it"s very good.Descriptions my project it"s very good.Descriptions my project it"s very good'}
                         title={'Todo list'}
                         styles={todoListsImg}
                     />
+                </Slide>
+
+                <Slide direction={'right'} delay={800}>
                     <Project
                         description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
                         title={'Sotial media'}
                         styles={socialMediaImg}
                         positionRight={reversStyle}
                     />
-                    <Project
-                        description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
-                        title={'Calculator'}
-                        styles={calculatorImg}
-                    />
-                </div>
+                </Slide>
+
+                <Project
+                    description={'Descriptions my project it"s very good.Descriptions my project it"s very good'}
+                    title={'Calculator'}
+                    styles={calculatorImg}
+                />
             </div>
         </div>
-    );
+</div>
+)
+    ;
 };
 
 export default MyProjects;
