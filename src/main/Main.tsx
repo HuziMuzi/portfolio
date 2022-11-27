@@ -102,7 +102,8 @@ export const Main = () => {
             <div className={style.socialMedia}>
                 <Bounce cascade delay={700}>
 
-                    {socialMediaData.map(item => <div
+                    {socialMediaData.map(item =>
+                        <div
                         // variants={iconSocialMediaAnimation}
                     >
                     <span className={style.socialMediaBlock}>
@@ -112,7 +113,8 @@ export const Main = () => {
                             </div>
                         </a>
                 </span>
-                    </div>)}
+                    </div>
+                            )}
 
                 </Bounce>
 

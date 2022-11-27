@@ -94,10 +94,16 @@
   bottom: 100px;
   z-index: 6;
 
+
+
+
   .icon {
     color: var(--color-custom);
     display: block;
-
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.3)
+    }
   }
 
   .politicks {

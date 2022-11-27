@@ -41,10 +41,10 @@ export const PopUpMe = (props: PopUpMeType) => {
     return (
 
         <div className={style.popUp}>
-            <Fade direction={'up'}>
+            <Fade>
                 <div className={style.popUpContainer}>
                     <div className={style.btnBlock}>
-                        <div onClick={closePopUp} className={style.btnPop}></div>
+                        <div onClick={closePopUp} className={style.btnPop}>x</div>
                     </div>
                     <div className={style.contentBlock}>
                         <div className={style.contactInfoBlock}>
