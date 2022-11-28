@@ -54,6 +54,10 @@ export const PopUpMe = (props: PopUpMeType) => {
                                          src='https://www.peoples.ru/internet/blogger/khasbik/yJ3T4T31j9qIA.jpeg'
                                          alt="ava"/></div>
                                 <div className={style.popName}>Andrei <span>Davidovich</span></div>
+                                <div className={style.blockPopJob}>
+
+                                    <div className={style.popJob}>Frontend <span>Developer</span></div>
+                                </div>
                                 <div className={style.contactInfo}>
                                     <div className={style.contactBlocks}>
                                         {

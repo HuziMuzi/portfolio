@@ -66,11 +66,14 @@ export const Main = () => {
                                 <div className={style.photoBlock}>
                                     <img className={style.photo}
                                          src={avatar} alt=""/>
-                                    {/*<div className={style.photoMain}></div>*/}
                                 </div>
                                 <div className={style.text}>
-                                    <div className={style.title}>Frontend-developer</div>
-                                    <h1 className={style.name}>Andrei <span>Davidovich</span></h1>
+                                    <div className={style.titleBlock}>
+                                        <h1 className={style.name}>Andrei <span>Davidovich</span></h1>
+                                        <div className={style.title}>Frontend <span>Developer</span> </div>
+
+                                    </div>
+
                                     <p className={style.aboutMe}>Hello everybody! I am a person who has a strong passion for
                                         programming. I have experience in creating SPA with React/Redux/TypeScript. Now I am
                                         improving my skills in this direction and expanding them with new technologies. I'm
@@ -103,9 +106,9 @@ export const Main = () => {
                 <Bounce cascade delay={700}>
 
                     {socialMediaData.map(item =>
-                        <div
-                        // variants={iconSocialMediaAnimation}
-                    >
+                            <div
+                                // variants={iconSocialMediaAnimation}
+                            >
                     <span className={style.socialMediaBlock}>
                         <a href={item.link}>
                             <div className={style.icon}>
@@ -113,8 +116,8 @@ export const Main = () => {
                             </div>
                         </a>
                 </span>
-                    </div>
-                            )}
+                            </div>
+                    )}
 
                 </Bounce>
 
