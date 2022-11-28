@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from './Main.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import avatar from '../assets/image/avatar.jpg'
 import Button from "../common/components/button/Button";
 import {FaTelegramPlane} from "@react-icons/all-files/fa/FaTelegramPlane";
@@ -8,13 +8,10 @@ import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
 import {motion} from "framer-motion";
-import {Bounce, Fade} from "react-awesome-reveal";
 import {PopUpMe} from "./popUp/PopUpMe";
 
+import 'animate.css';
 
-// type MainPropsType = {
-//     // setShowPop: (value: boolean) => void
-// }
 
 export const Main = () => {
     const [showPop, setShowPop] = useState(false)
@@ -62,7 +59,8 @@ export const Main = () => {
 
                     {
                         showPop ? <PopUpMe setShowPop={setShowPop}/>
-                            : <Fade>
+                            :
+                            <div className={`${style.content} animate__animated animate__fadeInUp`}>
                                 <div className={style.photoBlock}>
                                     <img className={style.photo}
                                          src={avatar} alt=""/>
@@ -70,15 +68,16 @@ export const Main = () => {
                                 <div className={style.text}>
                                     <div className={style.titleBlock}>
                                         <h1 className={style.name}>Andrei <span>Davidovich</span></h1>
-                                        <div className={style.title}>Frontend <span>Developer</span> </div>
+                                        <div className={style.title}>Frontend <span>Developer</span></div>
 
                                     </div>
 
-                                    <p className={style.aboutMe}>Hello everybody! I am a person who has a strong passion for
-                                        programming. I have experience in creating SPA with React/Redux/TypeScript. Now I am
-                                        improving my skills in this direction and expanding them with new technologies. I'm
-                                        planing to study Node.js, because my next focus is to become a Full-Stack Developer.
-                                        Usually I spend my leisure time on Codewars.</p>
+                                    <p className={`${style.aboutMe} `}>Hello everybody! I am a person who has a strong
+                                        passion
+                                        for
+                                        programming. I have experience in creating SPA with React/Redux/TypeScript. Now
+                                        I am
+                                        improving my skills in this direction and expanding</p>
 
                                     <div className={style.buttons}>
                                         <motion.div{...animateBlock}>
@@ -92,34 +91,28 @@ export const Main = () => {
                                         <motion.div{...animateBlock}>
                                             <Button onClick={showPopUp}>About Me</Button>
                                         </motion.div>
-
                                     </div>
 
                                 </div>
-                            </Fade>
-
+                            </div>
                     }
                 </div>
 
             </div>
+
+
             <div className={style.socialMedia}>
-                <Bounce cascade delay={700}>
+                {/*<Bounce cascade delay={700}>*/}
 
                     {socialMediaData.map(item =>
-                            <div
-                                // variants={iconSocialMediaAnimation}
-                            >
-                    <span className={style.socialMediaBlock}>
-                        <a href={item.link}>
-                            <div className={style.icon}>
-                                {item.icon}
-                            </div>
-                        </a>
-                </span>
-                            </div>
+                        <div className={style.socialMediaWrapper}>
+                            <span className={style.socialMediaBlock}><a href={item.link}>
+                                <div className={style.icon}>
+                                {item.icon}</div></a>
+                         </span>
+                        </div>
                     )}
-
-                </Bounce>
+                {/*</Bounce>*/}
 
             </div>
         </div>

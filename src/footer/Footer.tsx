@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Footer.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {FaTelegramPlane} from "@react-icons/all-files/fa/FaTelegramPlane";
 import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";

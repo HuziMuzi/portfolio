@@ -23,6 +23,12 @@
     line-height: 100%;
 
 
+    @media all and (max-width: 780px) {
+        font-size: 24px;
+        margin-bottom: 25px;
+
+    }
+
 
     span{
         color : var(--color-custom);

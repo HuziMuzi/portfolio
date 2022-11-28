@@ -1,0 +1,14 @@
+.container {
+  /*border: 1px solid #fff;*/
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media all and (max-width: 780px) {
+    width: 80%;
+  }
+}

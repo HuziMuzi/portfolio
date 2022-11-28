@@ -1,11 +1,7 @@
 import React from 'react';
 import style from './Contacts.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from "../common/components/title/Title";
-import {GoLocation} from "@react-icons/all-files/go/GoLocation";
-import {AiOutlinePhone} from "@react-icons/all-files/ai/AiOutlinePhone";
-import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail";
-import {VscAccount} from "@react-icons/all-files/vsc/VscAccount";
 import Button from "../common/components/button/Button";
 
 const Contacts = () => {

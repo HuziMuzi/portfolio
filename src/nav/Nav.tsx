@@ -16,9 +16,3 @@ export const Nav = () => {
         </div>
     );
 };
-
-
-
-// className={({ isActive }) =>
-// isActive ? activeClassName : undefined
-// }

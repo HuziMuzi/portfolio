@@ -20,9 +20,6 @@ textarea:focus {
 
 }
 
-
-
-
 input:focus {
   border-bottom: 1px solid var(--color-custom);
 }
@@ -33,7 +30,6 @@ input:focus {
   z-index: 13;
 
   .container {
-    padding: 10px;
     display: flex;
     flex-direction: column;
 
@@ -43,52 +39,19 @@ input:focus {
       margin: 30px 0;
       z-index: 14;
 
-      .contactInfo {
-        margin-right: 40px;
-
-        .contactBlocks{
-          display: flex;
-          max-width: 450px;
-          margin-bottom: 30px;
-          .contactBlockLeft{
-            margin-right: 30px;
-          }
-        }
-
-        .mediaBody {
-          display: flex;
-          align-items: center;
-
-          .infoIcon {
-            padding-right: 20px;
-
-            .iLocal {
-              color: var(--color-custom);
-            }
-          }
-
-          .infoDetails {
-            border-left: 2px solid rgba(255, 255, 255, .15);
-            padding: 12px 0 12px 22px;
-
-            .infoName {
-              font-size: 15px;
-            }
-
-            .infoValue {
-              color: #9f9f9f;
-              font-size: 14px;
-            }
-          }
-        }
-      }
-
       .form {
-       width: 450px;
+        width: 450px;
         display: flex;
         flex-direction: column;
-
         margin-bottom: 30px;
+
+        @media all and (max-width: 780px) {
+          //width: 350px;
+        }
+
+        @media all and (max-width: 575px) {
+          width: 265px;
+        }
 
         .formTitle {
           text-align: center;

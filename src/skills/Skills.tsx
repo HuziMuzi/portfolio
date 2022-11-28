@@ -1,21 +1,8 @@
 import React from 'react';
 import style from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
-import {SiJavascript} from "@react-icons/all-files/si/SiJavascript";
-import {SiTypescript} from "@react-icons/all-files/si/SiTypescript";
-import {IoLogoHtml5} from "@react-icons/all-files/io5/IoLogoHtml5";
-import {DiCss3} from "@react-icons/all-files/di/DiCss3";
-import {FaReact} from "@react-icons/all-files/fa/FaReact";
-import {SiRedux} from "@react-icons/all-files/si/SiRedux";
-import {DiGitBranch} from "@react-icons/all-files/di/DiGitBranch";
-import {DiSass} from "@react-icons/all-files/di/DiSass";
-import {SiMaterialUi} from "@react-icons/all-files/si/SiMaterialUi";
-import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1";
-
-
-
 import JavaScriptIcon from "../assets/skillIcon/JavaScriptIcon";
 import ReactIcon from "../assets/skillIcon/ReactIcon";
 import ReduxIcon from "../assets/skillIcon/ReduxIcon";
@@ -31,13 +18,6 @@ import GitIcon from "../assets/skillIcon/GitIcon";
 
 
 export const Skills = () => {
-
-    const styleIcons = {
-        size: '50px',
-
-
-    }
-
     const skills = [
         {
             id: 1,
